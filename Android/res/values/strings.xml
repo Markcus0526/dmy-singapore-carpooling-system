@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ride2Gather</string>
+    <string name="NetworkState_Error">Network disconnected</string>
+    <string name="Null_String"></string>
+    <string name="gpsalert">Please enable GPS service</string>
+    <string name="waiting">waiting...</string>
+    <string name="menu_settings">setting</string>
+    <string name="Login_Register">Register</string>
+    <string name="Login_SignIn">Sign In</string>
+    <string name="Notice_Title">Important Notice</string>
+    <string name="Notice_Next">I Understand</string>
+    <string name="Notice_Data">By using Ride2Gather(the \"App\"), you are fully aware of the fact that the travel time may be longer and it may cause slight delay to your itinerary. MOVERSMART PTE LTD IS NOT RESPONSIBLE FOR ANY LOSS OR DAMANGE INCURRED BY ANY USER AS A RESULT OF USING THE APP. Please be kindly advised NOT to use the App when you are rushing for important meetings.</string>
+	<string name="OnBoard_Title">Wellcome On Board</string>
+	<string name="OnBoard_Start">Start</string>
+    <string name="SelectPosition_Modify">Modify</string>
+    <string name="SelectPosition_Start">Check in at this Taxi Stand</string>
+    <string name="SelectPosition_Hint">You can check the Location No. on the sign board to double confirm the Taxi Stand</string>
+    <string name="ChangePosition_Cancel">Cancel</string>
+    <string name="ChangePosition_Find">Find</string>
+    <string name="ChangePosition_CannotFind">Can\'t find\?</string>
+    <string name="DestSubmit_Title">Help Us Complete Our Database</string>
+    <string name="DestSubmit_Submit">Submit</string>
+    <string name="DestSubmit_Content">If you cannot find the Taxi Stand you are at now, simply click the \"Submit\" button below and we will record the coordinates of your current location. We will then send our ground staff down to verify the location and add the Taxi Stand into our database.</string>
+    <string name="MyInfo_Destination">Your Destination</string>
+    <string name="MyInfo_ColorOfTop">Colour of your top</string>
+    <string name="MyInfo_Hint">Other identifiable features of you(optional)</string>
+    <string name="MyInfo_CheckIn">Check In</string>
+    <string name="MyInfo_PaxPrompt">No. of Pax</string>
+    <string-array name="MyInfo_Pax">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+    </string-array>
+    <string name="MyInfo_GroupGenderPrompt">Gender</string>
+    <string-array name="MyInfo_GroupGender">
+        <item >Male</item>
+        <item >Female</item>
+        <item >Either Gender</item>
+    </string-array>
+    <string name="CheckIn_Confirm">Confirm</string>
+    <string name="CheckIn_Amend">Amend</string>
+    <string name="MatchInfo_ViewRoute">View Route</string>
+    <string name="MatchInfo_Reject">Reject</string>
+    <string name="MatchInfo_Return">Check Out</string>
+    <string name="MatchInfo_Matched">Match Found</string>
+    <string name="MatchInfo_Hint">Please Check Out if you are no longer in the queue</string>
+    <string name="ViewRoute_AgreeToShare">Agree to Share</string>
+    <string name="ViewRoute_Reject">Reject</string>
+    <string name="Setting_Home">Home</string>
+    <string name="Setting_Profile">Profile</string>
+    <string name="Setting_SharingCriteria">Sharing Criteria</string>
+    <string name="Setting_CreditBalance">Credit Balance</string>
+    <string name="Setting_TellFriend">Tell a Friend</string>
+    <string name="Setting_HistoryAndRating">History and Rating</string>
+    <string name="Setting_Help">Help</string>
+    <string name="Profile_Title">Profile</string>
+    <string name="Profile_Logout">Log out</string>
+    <string name="Profile_Edit">Edit</string>
+    <string name="Profile_EmailHint">Email</string>
+    <string name="Profile_PhoneHint">Phone number</string>
+    <string name="Profile_YearHint">Year of birthday</string>
+    <string name="Help_Title">Help</string>
+    <string name="Help_Content">If you have enquiries regarding the App, Please contact us at \n\n Ride2gather\@gmail\.com</string>
+    <string name="TellFriend_Title">Tell a Friend</string>
+    <string name="TellFriend_Send">Send</string>
+    <string name="TellFriend_Hint">Find a contact</string>
+    <string name="TellFriend_DialogContent">Standard mobile carrier SMS rates may apply.</string>
+    <string name="TellFriend_DownloadTitle">Download it now</string>
+    <string name="TellFriend_DownloadAndroid">Android Version:</string>
+    <string name="TellFriend_DownloadiPhone">iPhone Version:</string>
+    <string name="TellFriend_SMSTemplate">Hey, tried the app called \"Ride2Gather\", the best taxi sharing app in Singapore? It save me $6 per trip on average, and less waiting time!</string>
+    <string name="UserProfile_GenderHint">Male/Female</string>
+    <string name="UserProfile_YearHint">Year of Birth</string>
+    <string name="UserProfile_EmailHint">Email</string>
+    <string name="UserProfile_PhoneNumberHint">Phone Number</string>
+    <string name="UserProfile_Next">Next</string>
+    <string name="UserRegister_Title">Registration</string>
+    <string name="UserRegister_NicknameHint">Nickname</string>
+    <string name="UserRegister_GenderHint">Select a Gender</string>
+    <string name="UserRegister_BirthHint">Select a Year of Birthday</string>
+    <string name="UserRegister_EmailHint">Email</string>
+    <string name="UserRegister_PhoneNumberHint">Phone Number</string>
+    <string name="UserRegister_PasswordHint">Password</string>
+    <string name="UserRegister_RePasswordHint">Re-enter Password</string>
+    <string name="UserRegister_Register">Register</string>
+    <string-array name="UserRegister_GroupGender">
+        <item >Male</item>
+        <item >Female</item>
+    </string-array>
+	<string name="SignIn_Title">Sign In</string>
+	<string name="SignIn_EmailHint">Email</string>
+	<string name="SignIn_PasswordHint">Password</string>
+	<string name="SignIn_ForgotPassword">Forgot Password</string>
+	<string name="ForgotPassword_Title">Forgot Password</string>
+	<string name="ForgotPassword_ResetPassword">Reset Password</string>
+	<string name="ForgotPassword_EmailAccountHint">Email Account</string>
+	<string name="BuyCredits_BuyCredits">Buy Credits</string>
+	<string name="BuyCredits_Return">Return</string>
+	<string name="BuyCredits_CreditsHint">You have saved S$%d (est.) by sharing though RIDE2GATHER</string>
+	<string name="BuyCredits_Content">Oops, your credits balance is zero!\nSimply click \"Buy Credits\" and start saving again\!</string>
+	<string name="Matching_Content">Please be patient. We will notify you once a match is found</string>
+	<string name="Matching_CheckOut">Check Out</string>
+	<string name="Matching_Hint">Please Check Out if you are no longer in the queue</string>
+	<string name="Profile_Title">Profile</string>
+	<string name="Profile_Logout">Log out</string>
+	<string name="Profile_Edit">Edit</string>
+	<string name="SharingCriteria_Hint">I am fine to share with</string>
+	<string name="SharingCriteria_CarPoolHint">a group of people (2~3 pax)</string>
+	<string name="SharingCriteria_IndGenderHint">an individual of</string>
+	<string name="SharingCriteria_GrpGenderHint">a of Group</string>
+	<string name="SharingCriteria_DelayTimePrompt">Select delay time</string>
+	<string name="SharingCriteria_DelayTimeHint">I don\'t want to be delayed for more than</string>
+	<string name="SharingCriteria_Ok">OK</string>
+	<string name="SharingCriteria_SaveSuccess">Save Success</string>
+	<string-array name="SharingCriteria_CarPool">
+        <item >No</item>
+        <item >Yes</item>
+    </string-array>
+    <string-array name="ColorList">
+        <item >Black</item>
+        <item >White</item>
+        <item >Red</item>
+        <item >Orange</item>
+        <item >Yellow</item>
+        <item >Green</item>
+        <item >Cyan</item>
+        <item >Blue</item>
+        <item >Purple</item>
+        <item >Gold</item>
+        <item >Silver</item>
+    </string-array>
+    <string-array name="SharingCriteria_Gender">
+        <item >Male</item>
+        <item >Female</item>
+        <item >Either Gender</item>
+    </string-array>
+    <string-array name="SharingCriteria_GrpGender">
+        <item >Male</item>
+        <item >Female</item>
+        <item >Mixed</item>
+        <item >Male or Mixed</item>
+        <item >Female or Mixed</item>
+        <item >Any</item>
+    </string-array>
+    <string-array name="SharingCriteria_DelayTime">
+        <item >3 minutes</item>
+        <item >5 minutes</item>
+        <item >10 minutes</item>
+    </string-array>
+    <string name="BuyCreditsRequest_Title">Buy Credits</string>
+    <string name="BuyCreditsRequest_5CreditsMark">5 Credits</string>
+    <string name="BuyCreditsRequest_10CreditsMark">10 Credits</string>
+    <string name="BuyCreditsRequest_20CreditsMark">20 Credits</string>
+    <string name="BuyCreditsRequest_5CreditsValue">S$5</string>
+    <string name="BuyCreditsRequest_10CreditsValue">S$9</string>
+    <string name="BuyCreditsRequest_20CreditsValue">S$16</string>
+    <string name="BuyCreditsRequest_PostFacebookTop">Post on Facebook to gain 1 credit</string>
+    <string name="BuyCreditsRequest_PostFacebookBottom">(Limited to once every 7 days)</string>
+    <string name="BuyCreditsRequest_InviteFriend">Invite a friend to join to gain 2 credits</string>
+    <string name="AgreePair_WaitingResponse">Awaiting for the other party to respond</string>
+    <string name="AgreePair_FailResponse">Oops, unfortunately the other party is not agreeable to share a taxi. We will keep searching for another candidate that suits your sharing criteria.</string>
+    <string name="AgreePair_FailResponse_ButtonTitle">Continue Searching</string>
+    <string name="AgreePair_SuccessResponse">Congratulations! The other party has also agreed to share a taxi with you!</string>
+    <string name="AgreePair_SuccessResponse_ButtonTitle">More about the other party</string>
+    <string name="AboutOtherParty_Hint">If you are almost at the front of the waiting queue and about to board a taxi (not necessarily the 2nd in the line), please click below button to notify the other party to prepare to board with you.</string>
+    <string name="AboutOtherParty_NextBoard">I am the next to board</string>
+    <string name="History_Title">History and Rating</string>
+    <string name="History_TotalSaving">Total Saving:</string>
+    <string name="History_RatingHim">Rate Him</string>
+    <string name="History_RatingHer">Rate Her</string>
+    <string name="Rating_Title">Give Rating</string>
+    <string name="Rating_Confirm">Confirm</string>
+    <string name="Rating_Cancel">Cancel</string>
+    <string name="Rating_AlreadyUpdated">Aleady Rated.</string>
+    <string name="CreditBalance_Title">Credit Balance</string>
+    <string name="CreditBalance_RequestCredits">Buy More Credits</string>
+    <string name="CreditBalance_RemainCredits">Credits Remaining</string>
+    <string name="FacebookPostTitle">Post-A-Credit</string>
+    <string name="FacebookPost_Share">Share</string>
+    <string name="FacebookPost_PostContentError">Please insert message content to post</string>
+    <string name="FacebookPost_PostError">Please select site to post on click Share button</string>
+    <string name="FacebookPost_DefaultPostContent">I am using the app Ride2Gather and have saved a lot simply by sharing a cab with other people. Give it a free try and I will meet you in a cab next time!</string>
+    <string name="AboutOtherParty_RateYourParty">Rate Your Party</string>
+    
+    <!-- Toast String Section Start -->
+    <string name="date_error">测试版本用期限过了</string>
+    <string name="username_insert_error">Please insert your nickname.</string>
+    <string name="email_insert_error">Please insert your email address.</string>
+    <string name="phonenumber_insert_error">Please insert your phone number.</string>
+    <string name="message_insert_error">Please insert message content to send.</string>
+    <string name="password_insert_error">Please insert your password.</string>
+    <string name="yearofbirth_insert_error">Please insert valid year of birthday.</string>
+    <string name="yearofbirth_format_error">Please insert value between %1$d and %2$d.</string>
+    <string name="repassword_insert_error">Please insert your re-password.</string>
+    <string name="password_match_error">Your inserted password is invalid.</string>
+    <string name="destination_insert_error">Please insert destination.</string>
+    <string name="server_connection_error">Can not find server.</string>
+    <string name="service_error">Service failure.</string>
+    <string name="request_keyword">Please insert keyword.</string>
+    <string name="reqeust_timeout">Request Timeout.</string>
+    <string name="email_format_error">Email format invalid.</string>
+	<string name="googleservice_notsupported">Google Play Services is not supported!</string>
+	<string name="destination_insert_error">Please select your destination.</string>
+	<string name="coloroftop_insert_error">Please insert your color of top.</string>
+	<string name="alert">Alert.</string>
+	<string name="profile_save">Your profile is changed. Do you want to save?</string>
+	<string name="dialog_ok">Ok</string>
+	<string name="dialog_cancel">Cancel</string>
+	<string name="facebookpost_error">You are able to share only once a week.</string>
+    <!-- Toast String Section End -->
+    
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+    
+	<string-array name="facebook_array">
+    	<item>User Profile</item>
+    	<item>Post Message</item>
+    	<item>Friends</item>
+    	<item>Get Feeds</item>
+    	<item>Upload Image</item>
+    	<item>Get Albums</item>
+    	<item>Update Story</item>
+    	<item>Close Dialog</item>
+    </string-array>
+    <string-array name="twitter_array">
+    	<item>User Profile</item>
+    	<item>Send Tweet</item>
+    	<item>Friends</item>
+    	<item>Get Feeds</item>
+    	<item>Upload Image</item>
+    	<item>Get Albums</item>
+    	<item>Close Dialog</item>
+    </string-array>		
+    <string-array name="linkedin_array">
+    	<item>User Profile</item>
+    	<item>Post an Update</item>
+    	<item>Friends</item>
+    	<item>Close Dialog</item>
+    </string-array>	
+    <string-array name="myspace_array">
+    	<item>User Profile</item>
+    	<item>Post an Update</item>
+    	<item>Friends</item>
+    	<item>Close Dialog</item>
+    </string-array>	
+    <string-array name="yahoo_array">
+    	<item>User Profile</item>
+    	<item>Post an Update</item>
+    	<item>Friends</item>
+    	<item>Close Dialog</item>
+    </string-array>	
+    <string-array name="yammer_array">
+    	<item>User Profile</item>
+    	<item>Post an Update</item>
+    	<item>Contacts</item>
+    	<item>Close Dialog</item>
+    </string-array>	
+    <string-array name="foursquare_array">
+    	<item>User Profile</item>
+    	<item>Contacts</item>
+    	<item>Close Dialog</item>
+    </string-array>	
+    <string-array name="google_array">
+    	<item>User Profile</item>
+    	<item>Friends</item>
+    	<item>Close Dialog</item>
+    </string-array>			
+    <string-array name="salesforce_array">
+    	<item>User Profile</item>
+    	<item>Close Dialog</item>
+    </string-array>
+    <string-array name="runkeeper_array">
+    	<item>User Profile</item>
+    	<item>Close Dialog</item>
+    </string-array>
+    <string-array name="googleplus_array">
+    	<item>User Profile</item>
+    	<item>Close Dialog</item>
+    </string-array>
+    <string-array name="drawable_array">
+    	<item>share</item>
+    	<item>profile</item>
+    	<item>contacts</item>
+    	<item>feeds</item>
+    	<item>image</item>
+    	<item>albums</item>
+    	<item>notepad</item>
+    	<item>close</item>
+    </string-array>
+</resources>

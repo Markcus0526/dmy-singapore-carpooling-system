@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llNotificationLayout"
+    android:layout_width="400px"
+    android:layout_height="320px"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="380px"
+        android:layout_height="210px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/subback" >
+
+        <TextView
+            android:id="@+id/lblNotifiation_Content"
+            android:layout_width="360px"
+            android:layout_height="190px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:textSize="24px" >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnNotification_Next"
+        android:layout_width="380px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="240px"
+        android:background="@drawable/bluebutton"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+</RelativeLayout>

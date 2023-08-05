@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRatingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnRating_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <TextView
+            android:id="@+id/lblRating_Title"
+            android:layout_width="180px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/Rating_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblRating_Content"
+        android:layout_width="440px"
+        android:layout_height="320px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/subback"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="20px"
+        android:textColor="@color/dark_gray"
+        android:textSize="24px" />
+
+    <RatingBar
+        android:id="@+id/starRating_Star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblRating_Content"
+        android:layout_below="@+id/lblRating_Content"
+        android:layout_marginTop="35px"
+        android:max="5"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <Button
+        android:id="@+id/btnRating_Confirm"
+        android:layout_width="200px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/starRating_Star"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/Rating_Confirm"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btnRating_Cancel"
+        android:layout_width="200px"
+        android:layout_height="70px"
+        android:background="@drawable/graybutton"
+        android:layout_alignRight="@+id/lblRating_Content"
+        android:layout_alignTop="@+id/btnRating_Confirm"
+        android:text="@string/Rating_Cancel"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+</RelativeLayout>

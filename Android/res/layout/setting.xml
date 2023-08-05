@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSettingLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlSetting_Home"
+        android:layout_width="fill_parent"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px" >
+
+        <ImageView
+            android:id="@+id/imgSetting_Home"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22px"
+            android:layout_marginTop="15px"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/lblSetting_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/Setting_Home"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_Home"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/light_gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSetting_Profile"
+        android:layout_width="fill_parent"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_Home"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px" >
+
+        <ImageView
+            android:id="@+id/imgSetting_Profile"
+            android:layout_width="27px"
+            android:layout_height="27px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/lblSetting_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"
+            android:gravity="center_vertical"
+            android:text="@string/Setting_Profile"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_Profile"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/light_gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSetting_SharingCriteria"
+        android:layout_width="fill_parent"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_Profile"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px" >
+
+        <ImageView
+            android:id="@+id/imgSetting_SharingCriteria"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21px"
+            android:src="@drawable/sharingcreteria" />
+
+        <TextView
+            android:id="@+id/lblSetting_SharingCriteria"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Setting_SharingCriteria"
+            android:textSize="28px"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_SharingCriteria"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/light_gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSetting_CreditBalance"
+        android:layout_width="fill_parent"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_SharingCriteria"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px" >
+
+        <ImageView
+            android:id="@+id/imgSetting_CreditBalance"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22px"
+            android:src="@drawable/creditbalance" />
+
+        <TextView
+            android:id="@+id/lblSetting_CreditBalnace"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"
+            android:gravity="center_vertical"
+            android:text="@string/Setting_CreditBalance"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_CreditBalance"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/light_gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSetting_TellFriend"
+        android:layout_width="fill_parent"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_CreditBalance"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px" >
+
+        <TextView
+            android:id="@+id/lblSetting_TellFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"
+            android:gravity="center_vertical"
+            android:text="@string/Setting_TellFriend"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/imgSetting_TellFriend"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22px"
+            android:src="@drawable/tellfriend" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_TellFriend"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/light_gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSetting_HistoryAndRating"
+        android:layout_width="fill_parent"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_TellFriend"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px" >
+
+        <TextView
+            android:id="@+id/lblSetting_HistoryAndRating"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"
+            android:text="@string/Setting_HistoryAndRating"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/imgSetting_HistoryAndRating"
+            android:layout_width="34px"
+            android:layout_height="34px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22px"
+            android:src="@drawable/historyandsharing" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_HistoryAndRating"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/light_gray" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSetting_Help"
+        android:layout_width="fill_parent"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_HistoryAndRating"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px" >
+
+        <TextView
+            android:id="@+id/lblSetting_Help"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80px"
+            android:text="@string/Setting_Help"
+            android:textSize="28px"
+            android:textColor="@color/white"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/imgSetting_Help"
+            android:layout_width="24px"
+            android:layout_height="33px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26px"
+            android:src="@drawable/help" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlSetting_Help"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@color/light_gray" >
+    </RelativeLayout>
+
+</RelativeLayout>

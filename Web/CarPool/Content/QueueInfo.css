@@ -1,0 +1,11 @@
+﻿.Search-tool-bar
+{
+    padding:0px 0px 5px 20px;
+    margin:5px 0px;
+    font-size:12px;
+}
+.search_Box
+{
+    border-bottom:1px solid #797979;
+    margin:5px 20px;
+}

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llLogoBack"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/viewLogo_Back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <RelativeLayout
+            android:id="@+id/rlLogo_View1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/image1" >           
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/rlLogo_View2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/image2" >
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/rlLogo_View3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/image3" >
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/rlLogo_View4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/image4" >
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/rlLogo_View5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/image5" >
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/rlLogo_View6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/image6" >	        
+	
+	    </RelativeLayout>
+        
+    </ViewFlipper>
+
+    <ImageView
+        android:id="@+id/imgBalloon1"
+        android:layout_width="12px"
+        android:layout_height="12px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="174px"
+        android:scaleType="fitCenter"
+        android:src="@drawable/redballoon" />
+    
+    <ImageView
+        android:id="@+id/imgBalloon2"
+        android:layout_width="12px"
+        android:layout_height="12px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="198px"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grayballoon" />
+    
+    <ImageView
+        android:id="@+id/imgBalloon3"
+        android:layout_width="12px"
+        android:layout_height="12px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="222px"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grayballoon" />
+    
+    <ImageView
+        android:id="@+id/imgBalloon4"
+        android:layout_width="12px"
+        android:layout_height="12px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="246px"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grayballoon" />
+    
+    <ImageView
+        android:id="@+id/imgBalloon5"
+        android:layout_width="12px"
+        android:layout_height="12px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="270px"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grayballoon" />
+    
+    <ImageView
+        android:id="@+id/imgBalloon6"
+        android:layout_width="12px"
+        android:layout_height="12px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="294px"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grayballoon" />
+
+</RelativeLayout>

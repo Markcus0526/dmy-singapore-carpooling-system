@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llBuyCreditsRequestLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+        
+        <Button
+            android:id="@+id/btnBuyCreditsRequest_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_Title"
+            android:layout_width="180px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/BuyCreditsRequest_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBuyCreditsRequest_5Credits"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/bluebutton" >
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_5CreditsMark"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:gravity="left|center_vertical"
+            android:text="@string/BuyCreditsRequest_5CreditsMark"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_5CreditsValue"
+            android:layout_width="70px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="330px"
+            android:gravity="left|center_vertical"
+            android:text="@string/BuyCreditsRequest_5CreditsValue"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBuyCreditsRequest_10Credits"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/rlBuyCreditsRequest_5Credits"
+        android:layout_below="@+id/rlBuyCreditsRequest_5Credits"
+        android:layout_marginTop="15px"
+        android:background="@drawable/bluebutton" >
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_10CreditsMark"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:gravity="left|center_vertical"
+            android:text="@string/BuyCreditsRequest_10CreditsMark"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_10CreditsValue"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="330px"
+            android:gravity="left|center_vertical"
+            android:text="@string/BuyCreditsRequest_10CreditsValue"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBuyCreditsRequest_20Credits"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/rlBuyCreditsRequest_10Credits"
+        android:layout_below="@+id/rlBuyCreditsRequest_10Credits"
+        android:layout_marginTop="15px"
+        android:background="@drawable/bluebutton" >
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_20CreditsMark"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:gravity="left|center_vertical"
+            android:text="@string/BuyCreditsRequest_20CreditsMark"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_20CreditsValue"
+            android:layout_width="80px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="330px"
+            android:gravity="left|center_vertical"
+            android:text="@string/BuyCreditsRequest_20CreditsValue"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBuyCreditsRequest_PostFacebook"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/rlBuyCreditsRequest_20Credits"
+        android:layout_below="@+id/rlBuyCreditsRequest_20Credits"
+        android:layout_marginTop="260px"
+        android:background="@drawable/bluebutton" >
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_PostFacebookTop"
+            android:layout_width="420px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/BuyCreditsRequest_PostFacebookTop"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_PostFacebookBottom"
+            android:layout_width="420px"
+            android:layout_height="30px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/BuyCreditsRequest_PostFacebookBottom"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBuyCreditsRequest_InviteFriend"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/rlBuyCreditsRequest_PostFacebook"
+        android:layout_below="@+id/rlBuyCreditsRequest_PostFacebook"
+        android:layout_marginTop="15px"
+        android:background="@drawable/bluebutton" >
+
+        <TextView
+            android:id="@+id/lblBuyCreditsRequest_InviteFriend"
+            android:layout_width="420px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/BuyCreditsRequest_InviteFriend"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

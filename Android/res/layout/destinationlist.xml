@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llDestinationListLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="450px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="16px"
+            android:background="@drawable/findback" >
+
+            <ImageView
+                android:id="@+id/imgDestinationList_MapPin"
+                android:layout_width="15px"
+                android:layout_height="28px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:src="@drawable/mappin" />
+
+            <ImageView
+                android:id="@+id/imgDestinationList_CancelMark"
+                android:layout_width="29px"
+                android:layout_height="29px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="415px"
+                android:src="@drawable/cancelmark" />
+
+            <EditText
+                android:id="@+id/txtDestinationList_Find"
+                android:layout_width="380px"
+                android:layout_height="36px"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="7px"
+                android:layout_marginTop="7px"
+                android:layout_toRightOf="@+id/imgDestinationList_MapPin"
+                android:background="@color/white"
+                android:ellipsize="middle"
+                android:hint="@string/request_keyword"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="5px"
+                android:singleLine="true"
+                android:textSize="20px" >
+                <requestFocus />
+
+            </EditText>
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDestinationListList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="73px" >
+
+        <com.Utils.PullRefreshListView.PullToRefreshListView
+            android:id="@+id/listDestinationList_AddressList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2px"
+            android:layout_marginLeft="2px"
+            android:layout_marginRight="2px"
+            android:layout_marginTop="2px"
+            android:background="@color/white"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" >
+
+        </com.Utils.PullRefreshListView.PullToRefreshListView>
+        
+        <!-- 
+        <ListView
+            android:id="@+id/listDestinationList_AddressList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+        </ListView>
+        
+        -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

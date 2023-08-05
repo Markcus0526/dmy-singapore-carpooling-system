@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrlMyInfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/white" >
+        
+	<RelativeLayout 
+	    android:id="@+id/llMyInfoLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/white" >      
+        
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="480px"
+	        android:layout_height="73px"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="0px"
+	        android:layout_marginTop="0px"
+	        android:background="@drawable/titleback" >
+	
+	        <Button
+	            android:id="@+id/btnMyInfo_back"
+	            android:layout_width="40px"
+	            android:layout_height="40px"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="12px"
+	            android:layout_marginTop="16px"
+	            android:background="@drawable/back" />
+	
+	        <ImageView
+	            android:id="@+id/imgMyInfo_Taxi"
+	            android:layout_width="136px"
+	            android:layout_height="44px"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/taxi" />
+	    </RelativeLayout>
+	
+	    <TextView
+	        android:id="@+id/lblMyInfo_Destination"
+	        android:layout_width="410px"
+	        android:layout_height="70px"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_below="@+id/relativeLayout1"
+	        android:layout_marginLeft="35px"
+	        android:layout_marginTop="105px"
+	        android:background="@color/light_gray"
+	        android:gravity="center_vertical"
+	        android:hint="@string/MyInfo_Destination"
+	        android:paddingLeft="20px"
+	        android:textColor="@color/black"
+	        android:textSize="24px" >
+	        	
+	    </TextView>
+	
+	    <Spinner
+	        android:id="@+id/spinMyInfo_Pax"
+	        android:layout_width="410px"
+	        android:layout_height="70px"
+	        android:layout_alignLeft="@+id/lblMyInfo_Destination"
+	        android:layout_below="@+id/lblMyInfo_Destination"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="25px"
+	        android:background="@drawable/spinnerback"
+	        android:prompt="@string/MyInfo_PaxPrompt" />
+	    
+	    <Spinner
+	        android:id="@+id/spinMyInfo_GroupGender"
+	        android:layout_width="410px"
+	        android:layout_height="70px"
+	        android:layout_alignLeft="@+id/spinMyInfo_Pax"
+	        android:layout_below="@+id/spinMyInfo_Pax"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="25px"
+	        android:background="@drawable/spinnerback"
+	        android:prompt="@string/MyInfo_GroupGenderPrompt" />
+	    
+	    <Spinner
+	        android:id="@+id/spinMyInfo_ColorOfTop"
+	        android:layout_width="410px"
+	        android:layout_height="70px"
+	        android:layout_alignLeft="@+id/spinMyInfo_GroupGender"
+	        android:layout_below="@+id/spinMyInfo_GroupGender"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="25px"
+	        android:background="@drawable/spinnerback"
+	        android:prompt="@string/MyInfo_ColorOfTop" />
+	    
+	    <TextView 
+	        android:id="@+id/lblMyInfo_Hint"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30px"
+	        android:layout_alignLeft="@+id/spinMyInfo_ColorOfTop"
+	        android:layout_below="@+id/spinMyInfo_ColorOfTop"
+	        android:layout_marginTop="25px"
+	        android:textColor="@color/gray"
+	        android:textSize="20px"
+	        android:text="@string/MyInfo_Hint" />
+	
+	    <EditText
+	        android:id="@+id/txtMyInfo_OtherFeature"
+	        android:layout_width="410px"
+	        android:layout_height="170px"
+	        android:layout_alignLeft="@+id/lblMyInfo_Hint"
+	        android:layout_below="@+id/lblMyInfo_Hint"
+	        android:background="@drawable/edittext_grayround"
+	        android:ems="10"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+	        android:gravity="top|left"
+	        android:inputType="textMultiLine"
+	        android:paddingLeft="20px"
+	        android:paddingTop="5px"
+	        android:textSize="24px" />
+	
+	    <Button
+	        android:id="@+id/btnMyInfo_CheckIn"
+	        android:layout_width="410px"
+	        android:layout_height="70px"
+	        android:layout_alignLeft="@+id/txtMyInfo_OtherFeature"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="705px"
+	        android:background="@drawable/bluebutton"
+	        android:text="@string/MyInfo_CheckIn"
+	        android:textColor="@color/white"
+	        android:textSize="24px" />
+
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="25px"
+	        android:layout_below="@+id/btnMyInfo_CheckIn" >
+
+	    </RelativeLayout>
+
+	    <EditText
+	        android:id="@+id/txtFalse"
+	        android:layout_width="1px"
+	        android:layout_height="1px"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/relativeLayout1"
+	        android:clickable="false"
+	        android:ems="10"
+	        android:enabled="false" >
+
+	        <requestFocus />
+	    </EditText>
+
+	</RelativeLayout>
+	
+</ScrollView>

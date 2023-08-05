@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llOnBoardLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".OnBoardActivity" >
+
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <TextView
+            android:id="@+id/txtOnBoard_Title"
+            android:layout_width="300px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/OnBoard_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="410px"
+        android:layout_height="575px"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="110px"
+        android:background="@drawable/subback" >
+
+        <android.webkit.WebView
+            android:id="@+id/webOnBoard_Data"
+            android:layout_width="355px"
+            android:layout_height="495px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="35px"
+            android:background="@android:color/transparent" >
+
+        </android.webkit.WebView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnOnBoard_Start"
+        android:layout_width="410px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="705px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/OnBoard_Start"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+</RelativeLayout>

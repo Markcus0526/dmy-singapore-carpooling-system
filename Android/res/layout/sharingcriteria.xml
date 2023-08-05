@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSharingCriteriaLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnSharingCriteria_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+        
+        <TextView
+            android:id="@+id/lblSharingCriteria_Title"
+            android:layout_width="260px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/Setting_SharingCriteria"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+        
+    </RelativeLayout>    
+    
+    <TextView
+        android:id="@+id/lblSharingCriteria_Hint"
+        android:layout_width="480px"
+        android:layout_height="70px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="73px"
+        android:background="@color/light_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:text="@string/SharingCriteria_Hint"
+        android:textColor="@color/dark_gray"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/btnSharingCriteria_Ok"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="705px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/SharingCriteria_Ok"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/lblSharingCriteria_CarPoolHint"
+        android:layout_width="420px"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblSharingCriteria_Hint"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="25px"
+        android:gravity="left|center_vertical"
+        android:text="@string/SharingCriteria_CarPoolHint"
+        android:textColor="@color/dark_gray"
+        android:textSize="22px" />
+    
+    <Spinner
+        android:id="@+id/spinSharingCriteria_CarPool"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/lblSharingCriteria_CarPoolHint"
+        android:layout_below="@+id/lblSharingCriteria_CarPoolHint"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5px"
+        android:background="@color/light_gray"
+        android:prompt="@string/SharingCriteria_CarPoolHint" />
+    
+    <TextView
+        android:id="@+id/lblSharingCriteria_IndGender"
+        android:layout_width="420px"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinSharingCriteria_CarPool"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="25px"
+        android:gravity="left|center_vertical"
+        android:text="@string/SharingCriteria_IndGenderHint"
+        android:textColor="@color/dark_gray"
+        android:textSize="22px" />
+    
+    <Spinner
+        android:id="@+id/spinSharingCriteria_IndGender"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/lblSharingCriteria_IndGender"
+        android:layout_below="@+id/lblSharingCriteria_IndGender"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5px"
+        android:background="@color/light_gray"
+        android:prompt="@string/SharingCriteria_IndGenderHint" />
+    
+    <TextView
+        android:id="@+id/lblSharingCriteria_GrpGender"
+        android:layout_width="420px"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinSharingCriteria_IndGender"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="25px"
+        android:gravity="left|center_vertical"
+        android:text="@string/SharingCriteria_GrpGenderHint"
+        android:textColor="@color/dark_gray"
+        android:textSize="22px" />
+    
+    <Spinner
+        android:id="@+id/spinSharingCriteria_GrpGender"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/lblSharingCriteria_GrpGender"
+        android:layout_below="@+id/lblSharingCriteria_GrpGender"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5px"
+        android:background="@color/light_gray"
+        android:prompt="@string/SharingCriteria_GrpGenderHint" />
+    
+    <TextView
+        android:id="@+id/lblSharingCriteria_DelayTime"
+        android:layout_width="420px"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinSharingCriteria_GrpGender"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="25px"
+        android:gravity="left|center_vertical"
+        android:text="@string/SharingCriteria_DelayTimeHint"
+        android:textColor="@color/dark_gray"
+        android:textSize="22px" />
+    
+    <Spinner
+        android:id="@+id/spinSharingCriteria_DelayTime"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/lblSharingCriteria_DelayTime"
+        android:layout_below="@+id/lblSharingCriteria_DelayTime"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5px"
+        android:background="@color/light_gray"
+        android:prompt="@string/SharingCriteria_DelayTimePrompt" />
+
+</RelativeLayout>

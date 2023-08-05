@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llHelpLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnHelp_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <TextView
+            android:id="@+id/lblHelp_Title"
+            android:layout_width="136px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/Help_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblHelp_Content"
+        android:layout_width="420px"
+        android:layout_height="630px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/subback"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="20px"
+        android:textColor="@color/dark_gray"
+        android:textSize="28px" />
+
+</RelativeLayout>

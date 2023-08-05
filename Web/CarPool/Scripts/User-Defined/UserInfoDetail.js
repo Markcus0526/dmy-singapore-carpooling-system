@@ -1,0 +1,6 @@
+﻿$(document).ready(function () {
+    $("#btn_return").click(function () {
+        //window.open(rootUri + "UserMng", "_self");
+        window.history.back();
+    });
+})

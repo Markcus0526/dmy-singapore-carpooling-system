@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[LoginViewController btnFacebookLoginClick:]:LoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[FBSession activeSession].state">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UserManage getRequestEvaluate:]:CommManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "evaluate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ProfileViewController onClickLogOut:]:ProfileViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[image isEqual:imgDB]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__45-[LoginViewController btnFacebookLoginClick:]_block_invoke:LoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[error description]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RatingViewController sendThread]:RatingViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MatchFoundViewController agreeThread]:MatchFoundViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SuperViewController showhideMenuFunc]:SuperViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SlideMenuView tableView:didSelectRowAtIndexPath:]:SlideMenuView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sharedInstance.arrSettingControllers">
+            </PersistentString>
+            <PersistentString
+               value = "sharedInstance">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TaxiStandMapViewController getNearestTaxiStand]:TaxiStandMapViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CarPoolAppDelegate application:didFinishLaunchingWithOptions:]:CarPoolAppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FindNotTaxiStandViewController addNewTaxiStandThread]:FindNotTaxiStandViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

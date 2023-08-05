@@ -1,0 +1,39 @@
+﻿
+
+/*--Add TaxiLocation--*/
+#addMap{height:580px; overflow:auto; position:relative;margin-left:20px;margin-right:20px;margin-top:20px;}
+
+#google_map{position:relative;width:1024px;height:768px;background:url(Images/TaxiLocations/Map.jpg);}
+#add-dialog{width:240px;left:450px;top:250px;position:fixed;display:none}
+#dlg-header{background:#fff; height:30px;text-align:right;}
+#close-dlg{width:51px; height:20px;background:#76a9e0;-moz-border-raduis:4px;color:#fff;font-size:10px; margin-top:5px;margin-right:5px}
+#dlg-body{background:#76a9e0; height:245px;font-size:10px; color:#fff;padding:10px;}
+
+#point-info-dlg{width:240px;position:fixed;top:200px;display:none}
+#point-info-dlg-header{background:#fff; height:30px;text-align:right;}
+#point-info-dlg-close{width:51px; height:20px;background:#76a9e0;-moz-border-raduis:4px;color:#fff;font-size:10px; margin-top:5px;margin-right:5px}
+#point-info-dlg-body{background:#76a9e0; height:185px;font-size:10px; color:#fff;padding:10px;}
+
+/*--Detail TaxiLocation--*/
+
+#detailMap{ height:540px; overflow:auto;position:relative;background:url(Images/TaxiLocations/Map.jpg);}
+#detail_google_map{width:1024px;height:768px;background:url(Images/TaxiLocations/Map.jpg);}
+#google_search
+{
+    overflow:auto;
+    height:420px;
+    width:720;
+    position:relative;
+}
+
+
+.info_tbl
+{   
+    margin-top:40px;
+    font-size:12px;
+    width:320px;
+}
+.detail_tbl
+{
+    
+}

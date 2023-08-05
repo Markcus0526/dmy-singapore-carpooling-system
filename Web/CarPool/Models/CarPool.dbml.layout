@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 10.25" name="CarPool">
+  <DataContextMoniker Name="/CarPoolDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6aa8ae13-f5f4-404e-aa93-0c8fcaee9e13" absoluteBounds="6.75, 0.75, 2, 1.6709212239583329">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74196a6d-073b-4fdb-ac70-6e8f22df58aa" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.1109212239583333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aefc3d3a-d21c-44d1-87d3-95c60e2ced46" absoluteBounds="0.75, 5.125, 2, 3.7939680989583318">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ebd6fed-ba4a-40dd-bc67-35d04233af01" absoluteBounds="0.765, 5.585, 1.9700000000000002, 3.233968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f6ebc8d-e1f1-4e6f-bbd2-03a63be2b1d2" absoluteBounds="9.75, 0.75, 2, 3.9708886718749992">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_dest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bb30201-7c67-4cf6-96a6-6d2bbbef240d" absoluteBounds="9.765, 1.21, 1.9700000000000002, 3.410888671875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8016304-82ce-4295-9f8a-5b09e37c5ad3" absoluteBounds="6.5, 4.75, 2, 4.6785709635416666">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_queue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2472086-4e6c-416f-949b-f034d2ada5b0" absoluteBounds="6.515, 5.21, 1.9700000000000002, 4.1185709635416661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f1131a8-c493-4e6c-9b0a-e958c82c9fab" absoluteBounds="3.5, 6.5, 2, 3.4401269531250014">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_serve" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ca378c1-e34d-4f7c-af27-b1f022ab2aa2" absoluteBounds="3.515, 6.96, 1.9700000000000002, 2.880126953125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d54c6ec4-1af6-4d1b-9c02-40df685f8c2d" absoluteBounds="3.5, 4.125, 2, 1.6709212239583327">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_sharelog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d61ce5c0-bc73-4ec5-8a63-82c2114673fe" absoluteBounds="3.515, 4.585, 1.9700000000000002, 1.1109212239583333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1af9aa47-8bc0-47bd-b949-685da5a78b24" absoluteBounds="9.75, 5.75, 2, 1.8478417968750005">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_smslog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c42f4102-5957-45b6-8b9c-1502aa579766" absoluteBounds="9.765, 6.21, 1.9700000000000002, 1.287841796875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7bdb9664-97d1-4f2e-840b-a82e836edaa5" absoluteBounds="3.75, 0.875, 2, 2.2016829427083335">
+      <DataClassMoniker Name="/CarPoolDataContext/tbl_taxistand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67934d1d-acaf-42c7-9b10-a14abeec24f6" absoluteBounds="3.765, 1.335, 1.9700000000000002, 1.6416829427083335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.14796061197917); (6.5 : 6.14796061197917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CarPoolDataContext/tbl_user/tbl_user_tbl_queue" />
+      <nodes>
+        <classShapeMoniker Id="aefc3d3a-d21c-44d1-87d3-95c60e2ced46" />
+        <classShapeMoniker Id="d8016304-82ce-4295-9f8a-5b09e37c5ad3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.70948404947917); (3.5 : 7.70948404947917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CarPoolDataContext/tbl_user/tbl_user_tbl_serve" />
+      <nodes>
+        <classShapeMoniker Id="aefc3d3a-d21c-44d1-87d3-95c60e2ced46" />
+        <classShapeMoniker Id="9f1131a8-c493-4e6c-9b0a-e958c82c9fab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.04224202473958); (3.5 : 7.04224202473958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CarPoolDataContext/tbl_user/tbl_user_tbl_serve1" />
+      <nodes>
+        <classShapeMoniker Id="aefc3d3a-d21c-44d1-87d3-95c60e2ced46" />
+        <classShapeMoniker Id="9f1131a8-c493-4e6c-9b0a-e958c82c9fab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.46046061197917); (3.5 : 5.46046061197917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CarPoolDataContext/tbl_user/tbl_user_tbl_sharelog" />
+      <nodes>
+        <classShapeMoniker Id="aefc3d3a-d21c-44d1-87d3-95c60e2ced46" />
+        <classShapeMoniker Id="d54c6ec4-1af6-4d1b-9c02-40df685f8c2d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 3.07668294270833); (5.65625 : 5.97193841796875); (6.5 : 5.97193841796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CarPoolDataContext/tbl_taxistand/tbl_taxistand_tbl_queue" />
+      <nodes>
+        <classShapeMoniker Id="7bdb9664-97d1-4f2e-840b-a82e836edaa5" />
+        <classShapeMoniker Id="d8016304-82ce-4295-9f8a-5b09e37c5ad3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llHistoryLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnHistory_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <TextView
+            android:id="@+id/lblHistory_Title"
+            android:layout_width="280px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/History_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblHistory_TotalSavingTitle"
+        android:layout_width="200px"
+        android:layout_height="35px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="670px"
+        android:gravity="left|center_vertical"
+        android:text="@string/History_TotalSaving"
+        android:textColor="@color/light_blue"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/lblHistory_TotalSavingValue"
+        android:layout_width="200px"
+        android:layout_height="35px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="670px"
+        android:gravity="right|center_vertical"
+        android:text="S$XXX"
+        android:textColor="@color/light_blue"
+        android:textSize="24px" />
+
+    <RelativeLayout
+        android:layout_width="450px"
+        android:layout_height="620px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="27px"
+        android:background="@drawable/round_layout" >
+
+        <com.Utils.PullRefreshListView.PullToRefreshListView
+            android:id="@+id/listHistory_Histories"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2px"
+            android:layout_marginLeft="2px"
+            android:layout_marginRight="2px"
+            android:layout_marginTop="2px"
+            android:background="@color/white"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" >
+
+        </com.Utils.PullRefreshListView.PullToRefreshListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llCheckInLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnCheckIn_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <ImageView
+            android:id="@+id/imgCheckIn_Taxi"
+            android:layout_width="136px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taxi" />
+
+    </RelativeLayout>
+
+	 <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="410px"
+        android:layout_height="565px"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="110px"
+        android:background="@drawable/subback" >
+
+	     <TextView
+	         android:id="@+id/lblCheckIn_ConfirmData"
+	         android:layout_width="350px"
+	         android:layout_height="505px"
+	         android:layout_alignParentLeft="true"
+	         android:layout_alignParentTop="true"
+	         android:layout_marginLeft="30px"
+	         android:layout_marginTop="30px"
+	         android:gravity="top|left"
+	         android:textColor="@color/dark_gray"
+	         android:textSize="20px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCheckIn_Confirm"
+        android:layout_width="195px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="705px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/CheckIn_Confirm"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/btnCheckIn_Amend"
+        android:layout_width="195px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/btnCheckIn_Confirm"
+        android:layout_marginLeft="20px"
+        android:background="@drawable/graybutton"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        android:layout_toRightOf="@+id/btnCheckIn_Confirm"
+        android:text="@string/CheckIn_Amend" />
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llUserProfileLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/userprofileback"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgUserProfile_Photo"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="65px"
+        android:src="@drawable/defaultphoto" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="240px"
+        android:layout_height="70px"
+        android:layout_alignTop="@+id/imgUserProfile_Photo"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/imgUserProfile_Photo"
+        android:background="@drawable/grayback" >
+
+        <ImageView
+            android:id="@+id/imgUserProfile_Gender"
+            android:layout_width="32px"
+            android:layout_height="42px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:src="@drawable/gender" />
+        
+        <Spinner
+            android:id="@+id/spinUserProfile_Gender"
+            android:layout_width="160px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/imgUserProfile_Gender"
+            android:background="@color/light_gray"
+            android:paddingLeft="5px"
+            android:prompt="@string/UserRegister_GenderHint"
+            android:textSize="24px" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="240px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="20px"
+        android:background="@drawable/grayback" >
+
+        <ImageView
+            android:id="@+id/imgUserProfile_Year"
+            android:layout_width="32px"
+            android:layout_height="42px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:src="@drawable/profile" />
+        
+        <Spinner
+            android:id="@+id/spinUserProfile_Year"
+            android:layout_width="160px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/imgUserProfile_Year"
+            android:background="@color/light_gray"
+            android:paddingLeft="5px"
+            android:prompt="@string/UserRegister_BirthHint"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/imgUserProfile_Photo"
+        android:layout_below="@+id/imgUserProfile_Photo"
+        android:layout_marginTop="33px"
+        android:background="@drawable/grayback_long" >
+
+        <ImageView
+            android:id="@+id/imgUserProfile_Email"
+            android:layout_width="33px"
+            android:layout_height="25px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="22px"
+            android:src="@drawable/email" />
+
+        <TextView
+            android:id="@+id/lblUserProfile_Email"
+            android:layout_width="300px"
+            android:layout_height="42px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/imgUserProfile_Email"
+            android:gravity="left|center_vertical"
+            android:hint="@string/UserProfile_EmailHint"
+            android:textColor="@color/dark_gray"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0px"
+        android:background="@drawable/grayback_long" >
+
+        <ImageView
+            android:id="@+id/imgUserProfile_PhoneNumber"
+            android:layout_width="20px"
+            android:layout_height="35px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="17px"
+            android:src="@drawable/phone" />
+
+        <EditText
+            android:id="@+id/txtUserProfile_PhoneNumber"
+            android:layout_width="300px"
+            android:layout_height="42px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/imgUserProfile_PhoneNumber"
+            android:background="@drawable/edittext_grayround"
+            android:gravity="left|center_vertical"
+            android:hint="@string/UserProfile_PhoneNumberHint"
+            android:inputType="phone"
+            android:textColor="@color/dark_gray"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUserProfile_Next"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="665px"
+        android:layout_alignLeft="@+id/relativeLayout3"
+        android:background="@drawable/bluebutton"
+        android:text="@string/UserProfile_Next"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+</RelativeLayout>

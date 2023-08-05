@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llDestSubmitLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <TextView
+            android:id="@+id/txtDestSubmit_Title"
+            android:layout_width="420px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/DestSubmit_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="410px"
+        android:layout_height="505px"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="110px"
+        android:background="@drawable/subback" >
+
+        <android.webkit.WebView
+            android:id="@+id/webDestSubmit_Data"
+            android:layout_width="355px"
+            android:layout_height="435px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="35px"
+            android:background="@android:color/transparent" >
+
+        </android.webkit.WebView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDestSubmit_Submit"
+        android:layout_width="410px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="625px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/DestSubmit_Submit"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+    
+    <Button
+        android:id="@+id/btnDestSubmit_Cancel"
+        android:layout_width="410px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="715px"
+        android:background="@drawable/graybutton"
+        android:text="@string/dialog_cancel"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+</RelativeLayout>

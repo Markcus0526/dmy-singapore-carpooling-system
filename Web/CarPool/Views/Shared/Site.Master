@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <%= Html.Telerik().StyleSheetRegistrar()
+        .DefaultGroup(group => group
+            .Add("telerik.common.min.css")
+            .Add("telerik.office2010silver.min.css")
+            .Add("Site.css")
+            .Add("telerik.rtl.min.css")
+            .Combined(false)
+            .Compress(true))
+        %>
+        <script language="javascript" type="text/javascript" src="<%=ViewData["rootUri"] %>Scripts/jquery-1.7.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ViewData["rootUri"] %>Scripts/User-Defined/Common.min.js"></script>
+        <script language="javascript" type="text/javascript">
+            var rootUri = "<%= ViewData["rootUri"] %>";
+        </script>
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <div class="main_style">
+            <a href="<%= ViewData["rootUri"] %>UserMng/UserInfoView"><div class="site-logo"></div></a>
+            <div class="main_title">
+                <span>Welcome to <%=Session["adminName"] %>!</span>
+                <span class="date_str"><%=DateTime.Now.ToShortDateString() %></span>
+                <a href="<%= ViewData["rootUri"] %>Login/Logout">Logout</a>
+            </div>
+
+            <div class="main_head">
+            <table cellpadding = "0" cellspacing="0" border="0" width=100%>
+                <tr>
+                    <td width="5px"><div class="head-left"></div></td>
+                    <td><% Html.RenderPartial("PageHeader", ViewData); %></td>
+                    <td width="5px"><div class="head-right"></td>
+                </tr>
+            </table>
+            
+            </div>
+            <div class="left_nav">
+            <% Html.RenderPartial("LeftNavigation", ViewData); %>
+            </div>
+            <div class="main_content" style="<% if (ViewData["emptyLeftMenu"] != null) {%> width:100% <% } %>">
+                <div class="my-rc-topleft"></div>
+                <div class="corner rc-topright"></div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                <div class="corner rc-bottomleft"></div>
+                <div class="corner rc-bottomright"></div>
+            </div>
+        </div>
+        <% Html.Telerik().ScriptRegistrar().jQuery(false)
+                    .DefaultGroup(group =>  group
+//                             .Add("telerik.common.min.js")
+//                             .Add("telerik.menu.min.js")
+//                             .Add("telerik.grid.min.js")
+//                             .Add("telerik.grid.editing.min.js")
+//                             .Add("telerik.grid.filtering.min.js")
+//                             .Add("telerik.grid.grouping.min.js")
+//                             .Add("telerik.grid.reordering.min.js")
+//                             .Add("telerik.grid.resizing.min.js")
+//                             .Add("telerik.extensions.min.js")
+//                             .Add("telerik.textbox.min.js")
+//                             .Add("telerik.upload.min.js")
+//                             .Add("telerik.list.min.js")
+//                             .Add("telerik.editor.min.js")
+//                             .Add("telerik.panelbar.min.js")
+//                             .Add("telerik.splitter.min.js")
+//                             .Add("telerik.timepicker.min.js")
+                            .Combined(true)
+                            .Compress(true))
+                    .OnDocumentReady(() => {  })
+                    //.Globalization(true)
+                    .Render(); %>
+    </body>

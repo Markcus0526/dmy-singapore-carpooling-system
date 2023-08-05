@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+    <siteMapNode bizName="User" url="UserMng" title="Manage User Information" menuName="User Management" status="main" description="">
+        <siteMapNode bizName="User" url="UserMng/UserInfoView" title="View User Information" menuName="User Information" status="sub"  description="" />
+        <siteMapNode bizName="User" url="UserMng/DeletedUser" title="View Deleted User Information" menuName="Deleted User" status="sub"  description="" />
+    </siteMapNode>
+    <siteMapNode bizName="TSL" url="TaxiLocations" title="Manage TaxiStandLocation" menuName="TaxiStand Management" status="main" description="">
+        <siteMapNode bizName="TSL" url="TaxiLocations" title="View TaxiStandLocation Information" menuName="TaxiStand Information" status="sub"  description="" />
+        <siteMapNode bizName="TSL" url="TaxiLocations/Add" title="Add TaxiStandLocation" menuName="Add TaxiStand" status="sub"  description="" />
+    </siteMapNode>
+    <siteMapNode bizName="Queue" url="QueueStatus" title="View TaxiStandLocation's Queue Status" menuName="TaxiStand Queue Status" status="main" description="">
+        <siteMapNode bizName="Queue" url="QueueStatus/QueueInfo" title="View TaxiStandLocation's Queue Status" menuName="Queue Information" status="sub"  description="" />
+        <siteMapNode bizName="Queue" url="Serve" title="View Served User's Information" menuName="Serve Information" status="sub"  description="" />
+    </siteMapNode>
+    <siteMapNode bizName="Admin" url="AdminMng" title="Manage Admin Information" menuName="Change Password" status="main" description="">
+        <siteMapNode bizName="Admin" url="ChgPassword" title="Change Manager Password" menuName="Change Manager Password" status="sub"  description="" />
+    </siteMapNode>
+</siteMap>

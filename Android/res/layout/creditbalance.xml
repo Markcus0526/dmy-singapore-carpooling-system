@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llCreditBalanceLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CreditBalanceActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnCreditBalance_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <TextView
+            android:id="@+id/lblCreditBalance_Title"
+            android:layout_width="250px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/CreditBalance_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCreditBalance_Content"
+        android:layout_width="420px"
+        android:layout_height="550px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/subback">
+
+        <TextView
+            android:id="@+id/lblCreditBalance_Credits"
+            android:layout_width="390px"
+            android:layout_height="120px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="50px"
+            android:gravity="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="96px" />
+
+        <TextView
+            android:id="@+id/lblCreditBalance_CreditsRemain"
+            android:layout_width="390px"
+            android:layout_height="50px"
+            android:layout_alignLeft="@+id/lblCreditBalance_Credits"
+            android:layout_below="@+id/lblCreditBalance_Credits"
+            android:layout_marginTop="15px"
+            android:gravity="center"
+            android:text="@string/CreditBalance_RemainCredits"
+            android:textColor="@color/dark_gray"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/lblCreditBalance_TotalSavingTitle"
+            android:layout_width="200px"
+            android:layout_height="50px"
+            android:layout_alignLeft="@+id/lblCreditBalance_CreditsRemain"
+            android:layout_below="@+id/lblCreditBalance_CreditsRemain"
+            android:layout_marginTop="100px"
+            android:gravity="left|center_vertical"
+            android:text="@string/History_TotalSaving"
+            android:textColor="@color/dark_gray"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/lblCreditBalance_TotalSavingValue"
+            android:layout_width="200px"
+            android:layout_height="50px"
+            android:layout_alignBottom="@+id/lblCreditBalance_TotalSavingTitle"
+            android:layout_alignRight="@+id/lblCreditBalance_CreditsRemain"
+            android:layout_alignTop="@+id/lblCreditBalance_TotalSavingTitle"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/lblCreditBalance_TotalSavingTitle"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="28px" />
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCreditBalance_RequestBalance"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/rlCreditBalance_Content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/CreditBalance_RequestCredits"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+</RelativeLayout>

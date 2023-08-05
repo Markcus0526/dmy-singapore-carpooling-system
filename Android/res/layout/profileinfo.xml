@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llProfileInfoLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnProfileInfo_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/lblProfileInfo_Title"
+            android:layout_width="150px"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/Profile_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+
+        <Button
+            android:id="@+id/btnProfileInfo_Edit"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/graysmallbutton"
+            android:text="@string/Profile_Edit"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="440px"
+        android:layout_height="300px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/photoframe" >
+
+        <ImageView
+            android:id="@+id/imgProfileInfo_Photo"
+            android:layout_width="410px"
+            android:layout_height="270px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="15px" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/txtProfileInfo_Email"
+        android:layout_width="300px"
+        android:layout_height="30px"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="85px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/Profile_EmailHint"
+        android:gravity="left|center_vertical"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="24px" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imgProfileInfo_Email"
+        android:layout_width="33px"
+        android:layout_height="25px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="422px"
+        android:src="@drawable/email" />
+
+    <EditText
+        android:id="@+id/txtProfileInfo_PhoneNumber"
+        android:layout_width="300px"
+        android:layout_height="30px"
+        android:layout_alignLeft="@+id/txtProfileInfo_Email"
+        android:layout_below="@+id/txtProfileInfo_Email"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/Profile_PhoneHint"
+        android:singleLine="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="24px" />
+
+    <ImageView
+        android:id="@+id/imgProfileInfo_Phone"
+        android:layout_width="20px"
+        android:layout_height="35px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="478px"
+        android:src="@drawable/phone" />
+    
+    <EditText
+        android:id="@+id/txtProfileInfo_YearOfBirth"
+        android:layout_width="300px"
+        android:layout_height="30px"
+        android:layout_alignLeft="@+id/txtProfileInfo_PhoneNumber"
+        android:layout_below="@+id/txtProfileInfo_PhoneNumber"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:ems="10"
+        android:singleLine="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="24px"
+        android:hint="@string/Profile_YearHint" />
+
+    <ImageView
+        android:id="@+id/imgProfileInfo_YearOfBirth"
+        android:layout_width="27px"
+        android:layout_height="27px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="540px"
+        android:src="@drawable/profile" />
+    
+    
+    
+    <ImageView
+        android:id="@+id/imgProfileInfo_Rating"
+        android:layout_width="34px"
+        android:layout_height="34px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="39px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="590px"
+        android:src="@drawable/rating" />
+
+    <Button
+        android:id="@+id/btnProfileInfo_Logout"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:background="@drawable/graybutton"
+        android:text="@string/Profile_Logout"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <com.Utils.AutoSizeRatingBar
+        android:id="@+id/starProfileInfo_Mark"
+        android:layout_width="300px"
+        android:layout_height="30px"
+        android:layout_marginTop="30px"
+        android:layout_alignBottom="@+id/imgProfileInfo_Rating"
+        android:layout_alignLeft="@+id/txtProfileInfo_YearOfBirth" />
+
+</RelativeLayout>

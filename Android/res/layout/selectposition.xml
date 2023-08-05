@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSelectPositionLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnSelectPosition_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <ImageView
+            android:id="@+id/imgSelectPosition_Taxi"
+            android:layout_width="136px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taxi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="480px"
+        android:layout_height="520px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" >
+        
+	        <fragment
+	            android:id="@+id/mapSelectPosition"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            class="com.google.android.gms.maps.SupportMapFragment" />
+	        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:background="@color/defaultback" >
+
+        <TextView
+            android:id="@+id/lblSelectPosition_MyPos"
+            android:layout_width="300px"
+            android:layout_height="60px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="23px"
+            android:background="@drawable/edittext_round"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="5px"
+            android:paddingTop="3px"
+            android:textColor="@color/dark_gray"
+            android:textSize="20px" >
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnSelectPosition_Modify"
+            android:layout_width="113px"
+            android:layout_height="58px"
+            android:layout_alignTop="@+id/lblSelectPosition_MyPos"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/lblSelectPosition_MyPos"
+            android:background="@drawable/bluebutton"
+            android:text="@string/SelectPosition_Modify"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/lblSelectPosition_Hint"
+            android:layout_width="420px"
+            android:layout_height="16px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="95px"
+            android:text="@string/SelectPosition_Hint"
+            android:textColor="@color/gray"
+            android:textSize="11px" />
+
+        <Button
+            android:id="@+id/btnSelectPosition_Start"
+            android:layout_width="420px"
+            android:layout_height="70px"
+            android:layout_alignLeft="@+id/lblSelectPosition_Hint"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="115px"
+            android:background="@drawable/bluebutton"
+            android:enabled="true"
+            android:text="@string/SelectPosition_Start"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSignInLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="75px"
+        android:background="@drawable/titleback" >
+        
+        <Button
+            android:id="@+id/btnSignIn_Back"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="16px"
+            android:background="@drawable/back" />
+        
+        <TextView
+            android:id="@+id/lblSignIn_Title"
+            android:layout_width="190px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/SignIn_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+  
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="420px"
+        android:layout_height="70px"
+		android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="135px"
+        android:background="@drawable/grayback_long" >
+
+        <EditText
+            android:id="@+id/txtSignIn_Email"
+            android:layout_width="340px"
+            android:layout_height="42px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/imgSignIn_Email"
+            android:background="@color/light_gray"
+            android:gravity="left|center_vertical"
+            android:hint="@string/SignIn_EmailHint"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="24px" />
+
+        <ImageView
+            android:id="@+id/imgSignIn_Email"
+            android:layout_width="33px"
+            android:layout_height="25px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/email" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="230px"
+        android:background="@drawable/grayback_long" >
+
+        <EditText
+            android:id="@+id/txtSignIn_Password"
+            android:layout_width="340px"
+            android:layout_height="42px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/imgSignIn_Password"
+            android:background="@color/light_gray"
+            android:gravity="left|center_vertical"
+            android:hint="@string/SignIn_PasswordHint"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="24px" />
+
+        <ImageView
+            android:id="@+id/imgSignIn_Password"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:src="@drawable/key" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSignIn_SignIn"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="705px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/SignIn_Title"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/lblSignIn_ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="10px"
+        android:text="@string/SignIn_ForgotPassword"
+        android:textColor="@color/dark_gray"
+        android:textSize="20px" />
+
+</RelativeLayout>

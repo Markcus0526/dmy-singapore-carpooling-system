@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llViewRouteLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnViewRoute_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgSelectPosition_Taxi"
+            android:layout_width="136px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taxi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="480px"
+        android:layout_height="635px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" >
+        	        
+	        <fragment
+	            android:id="@+id/mapViewRoute"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            class="com.google.android.gms.maps.SupportMapFragment" />
+	        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnViewRoute_AgreeToShare"
+        android:layout_width="195px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="655px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/ViewRoute_AgreeToShare"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/btnViewRoute_Reject"
+        android:layout_width="195px"
+        android:layout_height="70px"
+        android:layout_alignBottom="@+id/btnViewRoute_AgreeToShare"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35px"
+        android:background="@drawable/graybutton"
+        android:text="@string/ViewRoute_Reject"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+</RelativeLayout>

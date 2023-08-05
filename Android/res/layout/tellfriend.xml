@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llTellFriendLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnTellFriend_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <TextView
+            android:id="@+id/lblTellFriend_Title"
+            android:layout_width="200px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/TellFriend_Title"
+            android:textColor="@color/light_blue"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblTellFriend_Phone"
+        android:layout_width="410px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/edittext_grayround"
+        android:gravity="left|center_vertical"
+        android:hint="@string/TellFriend_Hint"
+        android:paddingLeft="10px"
+        android:textColor="@color/dark_gray"
+        android:textSize="28px" >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtTellFriend_Message"
+        android:layout_width="410px"
+        android:layout_height="500px"
+        android:layout_alignLeft="@+id/lblTellFriend_Phone"
+        android:layout_alignRight="@+id/lblTellFriend_Phone"
+        android:layout_below="@+id/lblTellFriend_Phone"
+        android:layout_marginTop="15px"
+        android:background="@drawable/subback"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="20px"
+        android:textColor="@color/black"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/btnTellFriend_Send"
+        android:layout_width="410px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/txtTellFriend_Message"
+        android:layout_alignRight="@+id/txtTellFriend_Message"
+        android:layout_below="@+id/txtTellFriend_Message"
+        android:background="@drawable/bluebutton"
+        android:text="@string/TellFriend_Send"
+        android:textColor="@color/white"
+        android:layout_marginTop="20px"
+        android:textSize="24px" />
+
+</RelativeLayout>

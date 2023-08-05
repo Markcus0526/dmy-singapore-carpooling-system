@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="carpool" Class="CarPoolDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=carpool;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="carpoolConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_admin" Member="tbl_admins">
+    <Type Name="tbl_admin">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="remember" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_user" Member="tbl_users">
+    <Type Name="tbl_user">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="birthyear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="phone_number" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="email_address" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="credits" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="total_savings" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="regist_date" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="is_grouping" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ind_gender" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="grp_gender" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="delay_time" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="last_login_date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="image_path" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="tbl_user_tbl_queue" Member="tbl_queues" ThisKey="uid" OtherKey="user_id" Type="tbl_queue" />
+      <Association Name="tbl_user_tbl_serve" Member="tbl_serves" ThisKey="uid" OtherKey="user_id" Type="tbl_serve" />
+      <Association Name="tbl_user_tbl_serve1" Member="tbl_serves1" ThisKey="uid" OtherKey="user_id2" Type="tbl_serve" />
+      <Association Name="tbl_user_tbl_sharelog" Member="tbl_sharelogs" ThisKey="uid" OtherKey="user_id" Type="tbl_sharelog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_dest" Member="tbl_dests">
+    <Type Name="tbl_dest">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="Lang" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ISO2" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="Region1" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Region2" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Region3" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Region4" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="ZIP" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="Area1" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Area2" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Lat" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="Lng" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="TZ" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UTC" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DST" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_queue" Member="tbl_queues">
+    <Type Name="tbl_queue">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="enter_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="people_num" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="same_gender" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="top_color" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="other_features" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="taxistand_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="destination" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="dst_longitude" Type="System.Decimal" DbType="Decimal(30,20) NOT NULL" CanBeNull="false" />
+      <Column Name="dst_latitude" Type="System.Decimal" DbType="Decimal(30,20) NOT NULL" CanBeNull="false" />
+      <Column Name="group_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="state" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="resp_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="queue_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="agree_state" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="off_order" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="savingmoney" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="wastetime" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="lastreqtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pairedtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="isnext" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Association Name="tbl_user_tbl_queue" Member="tbl_user" ThisKey="user_id" OtherKey="uid" Type="tbl_user" IsForeignKey="true" />
+      <Association Name="tbl_taxistand_tbl_queue" Member="tbl_taxistand" ThisKey="taxistand_id" OtherKey="uid" Type="tbl_taxistand" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_serve" Member="tbl_serves">
+    <Type Name="tbl_serve">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="user_id2" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="serve_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="start_pos" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="end_pos" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="end_pos2" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="saving_money" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="saving_money2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="waste_time" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="waste_time2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="off_order1" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="off_order2" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="score1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="score2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="tbl_user_tbl_serve" Member="tbl_user" ThisKey="user_id" OtherKey="uid" Type="tbl_user" IsForeignKey="true" />
+      <Association Name="tbl_user_tbl_serve1" Member="tbl_user1" ThisKey="user_id2" OtherKey="uid" Type="tbl_user" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sharelog" Member="tbl_sharelogs">
+    <Type Name="tbl_sharelog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="sendtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="share_content" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_user_tbl_sharelog" Member="tbl_user" ThisKey="user_id" OtherKey="uid" Type="tbl_user" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_smslog" Member="tbl_smslogs">
+    <Type Name="tbl_smslog">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="receiver" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="valid" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="sendtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_taxistand" Member="tbl_taxistands">
+    <Type Name="tbl_taxistand">
+      <Column Name="uid" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="stand_no" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="stand_name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="gps_address" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="postcode" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="longitude" Type="System.Decimal" DbType="Decimal(10,6) NOT NULL" CanBeNull="false" />
+      <Column Name="latitude" Type="System.Decimal" DbType="Decimal(10,6) NOT NULL" CanBeNull="false" />
+      <Column Name="taxi_stand_type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_taxistand_tbl_queue" Member="tbl_queues" ThisKey="uid" OtherKey="taxistand_id" Type="tbl_queue" />
+    </Type>
+  </Table>
+</Database>

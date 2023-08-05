@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llBuyCreditsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnBuyCredits_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <ImageView
+            android:id="@+id/imgBuyCredits_Taxi"
+            android:layout_width="136px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taxi" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="420px"
+        android:layout_height="300px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="35px"
+        android:background="@drawable/subback" >
+
+        <TextView
+            android:id="@+id/lblBuyCredits_Content"
+            android:layout_width="370px"
+            android:layout_height="150px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="25px"
+            android:text="@string/BuyCredits_Content"
+            android:textColor="@color/dark_gray"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblBuyCredits_CreditsHint"
+        android:layout_width="420px"
+        android:layout_height="25px"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="160px"
+        android:gravity="left|center_vertical"
+        android:text="@string/BuyCredits_CreditsHint"
+        android:textColor="@color/dark_gray"
+        android:textSize="14px" />
+
+    <Button
+        android:id="@+id/btnBuyCredits_BuyCredits"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/lblBuyCredits_CreditsHint"
+        android:layout_below="@+id/lblBuyCredits_CreditsHint"
+        android:layout_marginTop="15px"
+        android:background="@drawable/bluebutton"
+        android:text="@string/BuyCredits_BuyCredits"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btnBuyCredits_Return"
+        android:layout_width="420px"
+        android:layout_height="70px"
+        android:layout_alignLeft="@+id/btnBuyCredits_BuyCredits"
+        android:layout_below="@+id/btnBuyCredits_BuyCredits"
+        android:layout_marginTop="30px"
+        android:background="@drawable/graybutton"
+        android:text="@string/BuyCredits_Return"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+</RelativeLayout>

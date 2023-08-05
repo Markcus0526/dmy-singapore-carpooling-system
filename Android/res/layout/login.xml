@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llLoginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginback"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <Button
+        android:id="@+id/btnLogin_FacebookLogin"
+        android:layout_width="400px"
+        android:layout_height="65px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="305px"
+        android:background="@drawable/facebookbutton" />
+
+    <Button
+        android:id="@+id/btnLogin_LinkedInLogin"
+        android:layout_width="400px"
+        android:layout_height="65px"
+        android:layout_alignLeft="@+id/btnLogin_FacebookLogin"
+        android:layout_alignRight="@+id/btnLogin_FacebookLogin"
+        android:layout_below="@+id/btnLogin_FacebookLogin"
+        android:layout_marginTop="50px"
+        android:background="@drawable/linkedinbutton" />
+
+    <Button
+        android:id="@+id/btnLogin_Register"
+        android:layout_width="190px"
+        android:layout_height="65px"
+        android:layout_alignLeft="@+id/btnLogin_LinkedInLogin"
+        android:layout_alignTop="@+id/btnLogin_LinkedInLogin"
+        android:layout_marginTop="280px"
+        android:background="@drawable/graybutton"
+        android:text="@string/Login_Register"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/btnLogin_SignIn"
+        android:layout_width="190px"
+        android:layout_height="65px"
+        android:layout_alignRight="@+id/btnLogin_LinkedInLogin"
+        android:layout_alignTop="@+id/btnLogin_Register"
+        android:background="@drawable/graybutton"
+        android:text="@string/Login_SignIn"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+</RelativeLayout>

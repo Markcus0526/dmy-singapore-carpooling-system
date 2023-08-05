@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMatchInfoLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MatchInfoActivity" >
+
+     <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="480px"
+        android:layout_height="73px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:background="@drawable/titleback" >
+
+        <Button
+            android:id="@+id/btnMatchInfo_Setting"
+            android:layout_width="64px"
+            android:layout_height="52px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="12px"
+            android:background="@drawable/settingbutton" />
+
+        <ImageView
+            android:id="@+id/imgMatchInfo_Taxi"
+            android:layout_width="136px"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taxi" />
+
+    </RelativeLayout>
+
+	 <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="410px"
+        android:layout_height="540px"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="105px"
+        android:background="@drawable/subback" >
+
+	     <Button
+	         android:id="@+id/btnMatchInfo_ViewRoute"
+	         android:layout_width="180px"
+	         android:layout_height="60px"
+	         android:layout_alignParentBottom="true"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginBottom="25px"
+	         android:layout_marginLeft="20px"
+	         android:background="@drawable/bluebutton"
+	         android:text="@string/MatchInfo_ViewRoute"
+	         android:textColor="@color/white"
+	         android:textSize="24px" />
+
+	     <Button
+	         android:id="@+id/btnMatchInfo_Reject"
+	         android:layout_width="180px"
+	         android:layout_height="60px"
+	         android:layout_alignBottom="@+id/btnMatchInfo_ViewRoute"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="20px"
+	         android:background="@drawable/graybutton"
+	         android:textColor="@color/white"
+	         android:textSize="24px"
+	         android:text="@string/MatchInfo_Reject" />
+
+	     <TextView
+	         android:id="@+id/lblMatchInfo_Matched"
+	         android:layout_width="155px"
+	         android:layout_height="30px"
+	         android:layout_alignLeft="@+id/btnMatchInfo_ViewRoute"
+	         android:layout_alignParentTop="true"
+	         android:layout_marginTop="25px"
+	         android:text="@string/MatchInfo_Matched"
+	         android:textColor="@color/light_blue"
+	         android:textSize="24px" />
+
+	     <TextView
+	         android:id="@+id/lblMatchInfo_PairResponse"
+	         android:layout_width="wrap_content"
+	         android:layout_height="335px"
+	         android:layout_alignLeft="@+id/lblMatchInfo_Matched"
+	         android:layout_alignRight="@+id/btnMatchInfo_Reject"
+	         android:layout_below="@+id/lblMatchInfo_Matched"
+	         android:gravity="top|left"
+	         android:textColor="@color/dark_gray"
+	         android:textSize="20px"
+	         android:layout_marginTop="10px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnMatchInfo_Return"
+        android:layout_width="410px"
+        android:layout_height="70px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="710px"
+        android:background="@drawable/graybutton"
+        android:text="@string/MatchInfo_Return"
+        android:textColor="@color/white"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/lblMatchInfo_Hint"
+        android:layout_width="410px"
+        android:layout_height="25px"
+        android:layout_alignLeft="@+id/btnMatchInfo_Return"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="30px"
+        android:textSize="18px"
+        android:textColor="@color/gray"
+        android:text="@string/MatchInfo_Hint" />
+
+</RelativeLayout>
