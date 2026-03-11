@@ -1,45 +1,198 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Singapore Carpooling System
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+A full-stack carpooling mobile application for Singapore that connects passengers heading in the same direction to share taxi rides and save costs.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## Project Overview
 
----
+This is a comprehensive carpooling platform that includes:
+- **iOS App** - Native iOS application (Objective-C)
+- **Android App** - Native Android application
+- **Web Backend** - ASP.NET MVC web portal
+- **Service Backend** - WCF RESTful API service
+- **Database** - SQL Server database
 
-## Edit a file
+## Architecture
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+```
+├── Android/          # Android native application
+├── Database/         # SQL Server database files
+├── iOS/              # iOS native application (Objective-C)
+├── Service/          # WCF RESTful API service
+└── Web/              # ASP.NET MVC web portal
+```
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+## Features
 
----
+### Core Functionality
+- **User Registration & Authentication** - Email and Facebook login support
+- **Carpool Matching** - Match passengers heading to similar destinations
+- **Taxi Stand Locator** - Find nearby taxi stands
+- **Destination Search** - Search and select destinations
+- **Credit System** - Manage ride credits
+- **Pairing History** - View past carpool trips
+- **User Ratings** - Rate and review carpool partners
+- **Real-time Matching** - Match found notifications
 
-## Create a file
+### User Preferences
+- Gender preference for grouping (male, female, no preference)
+- Delay time tolerance
+- Grouping preferences
 
-Next, you’ll add a new file to this repository.
+## Technology Stack
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+### iOS Client
+- **Language**: Objective-C
+- **UI**: XIB-based views
+- **Networking**: AFNetworking, ASIHTTPRequest
+- **Libraries**: 
+  - SBJSON (JSON parsing)
+  - Reachability (network status)
+  - LinkedIn API integration
+  - Pull-to-refresh (SVPullToRefresh)
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+### Android Client
+- **Language**: Java
+- **Platform**: Android SDK
+- **Features**: OAuth authentication
 
----
+### Backend
+- **Web Framework**: ASP.NET MVC 4
+- **Service Framework**: WCF (Windows Communication Foundation)
+- **Database ORM**: LINQ to SQL
+- **Protocol**: RESTful JSON API
 
-## Clone a repository
+### Database
+- **DBMS**: SQL Server
+- **ORM**: LINQ to SQL (DbMetal)
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+## Database Schema
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+### Core Tables
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+| Table | Description |
+|-------|-------------|
+| `tbl_user` | User accounts and profile information |
+| `tbl_dest` | Destination/landmark database |
+| `tbl_queue` | Active carpool queue entries |
+| `tbl_serve` | Service/pairing records |
+| `tbl_sharelog` | Trip sharing logs |
+| `tbl_smslog` | SMS notification records |
+| `tbl_taxistand` | Taxi stand locations |
+| `tbl_admin` | Admin user accounts |
+
+### User Profile Fields
+- Name, Gender, Birth Year
+- Phone Number, Email
+- Credits, Total Savings
+- Registration Date
+- Gender Preference for Grouping
+- Delay Time Tolerance
+- Profile Image
+
+## API Endpoints (WCF Service)
+
+### Authentication
+- `RequestRegister` - User registration
+- `RequestLogin` - Email login
+- `RequestFLLogin` - Facebook login
+- `IsValidUser` - Validate credentials
+- `RequestResetPassword` - Password reset
+
+### Pairing
+- `RequestPair` - Request carpool pairing
+- `RequestIsPaired` - Check pairing status
+- `RequestPairOff` - Cancel pairing
+- `RequestPairAgree` - Agree to pairing
+
+### User Management
+- `RequestUserProfile` - Get user profile
+- `RequestUserProfileUpdate` - Update profile
+- `RequestUserCredits` - Get credit balance
+
+### Locations
+- `RequestTaxiStand` - Get nearby taxi stands
+- `RequestTaxiStandList` - Get all taxi stands
+- `GetDestList` - Search destinations
+
+### History & Ratings
+- `RequestPairingHistoryList` - Get pairing history
+- `RequestEvaluate` - Rate a carpool partner
+
+### Utilities
+- `RequestSendSMS` - Send SMS notifications
+- `GetSharable` - Get shareable info
+- `RequestShareLog` - Log sharing data
+
+## iOS App Structure
+
+### View Controllers
+- `LoginViewController` / `SignInViewController` - Authentication
+- `RegisterViewController` - New user registration
+- `MatchingViewController` - Find carpool matches
+- `MatchFoundViewController` - Display match results
+- `ProfileViewController` / `MyInfoViewController` - User profiles
+- `CheckInViewController` - Check in for rides
+- `OnBoardViewController` - Board confirmation
+- `HistoryViewController` - Trip history
+- `CreditViewController` / `BuyCreditsViewController` - Credit management
+- `RouteViewController` - Route display
+- `DestFindViewController` - Destination search
+- `RatingViewController` - Rate partners
+- `FriendViewController` - Friends list
+- `HelpViewController` - Help & support
+
+### Common Components
+- `SuperViewController` - Base controller class
+- `SlideMenuView` - Side menu navigation
+- `Common` - Shared utilities
+
+## Building & Running
+
+### Prerequisites
+- **iOS**: Xcode 5+, iOS SDK 5+
+- **Android**: Android SDK, Eclipse/Android Studio
+- **Backend**: .NET Framework 4.0+, IIS 7+
+- **Database**: SQL Server 2008+
+
+### Database Setup
+1. Restore `Database/Database.rar` to SQL Server
+2. Update connection strings in:
+   - `Service/CarPoolService/Web.config`
+   - `Web/CarPool/Web.config`
+
+### Service Setup
+1. Open `Service/CarPoolService.sln` in Visual Studio
+2. Build and deploy to IIS
+3. Configure URL endpoints in Web.config
+
+### Web Portal Setup
+1. Open `Web/CarPool.sln` in Visual Studio
+2. Build and deploy to IIS
+
+### iOS App Setup
+1. Open `iOS/CarPool.xcodeproj` in Xcode
+2. Update API endpoints in `Common.m`
+3. Build and run on simulator/device
+
+### Android App Setup
+1. Import `Android/` project to Eclipse/Android Studio
+2. Update API endpoints in source code
+3. Build and install APK
+
+## Test Account
+
+```
+Email: gamesbird@gmail.com
+Password: a123456789A
+```
+
+
+## License
+
+This project appears to be proprietary software. All rights reserved.
+
+## Version
+
+- Last Updated: 2013
+- Status: Legacy/Historical Project
+
